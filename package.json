@@ -1,0 +1,43 @@
+{
+  "name": "WelcomeToVR",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start":
+      "node -e \"console.log('open browser at http://localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
+    "bundle": "node node_modules/react-vr/scripts/bundle.js",
+    "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
+    "devtools": "react-devtools",
+    "test": "jest",
+    "format": "yarn format-eslint && yarn format-prettier",
+    "format-eslint": "eslint --fix **/*.{js,jsx}",
+    "format-prettier": "prettier --write \"**/*.{js,jsx,json}\""
+  },
+  "dependencies": {
+    "ovrui": "~2.0.0",
+    "react": "16.0.0",
+    "react-native": "~0.48.0",
+    "react-vr": "~2.0.0",
+    "react-vr-web": "~2.0.0",
+    "three": "^0.87.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "babel-preset-react-native": "^1.9.1",
+    "jest": "^19.0.2",
+    "react-devtools": "^2.5.2",
+    "react-test-renderer": "16.0.0",
+    "xopen": "1.0.0",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.11.1"
+  },
+  "jest": {
+    "preset": "react-vr"
+  }
+}
