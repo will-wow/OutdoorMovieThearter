@@ -6,7 +6,8 @@
   },
   "rules": {
     "strict": 0,
-    "react/prop-types": "skipUndeclared"
+    "react/prop-types": "skipUndeclared",
+    "react/jsx-filename-extension": false
   },
   "extends": ["airbnb", "prettier", "prettier/react"]
 }

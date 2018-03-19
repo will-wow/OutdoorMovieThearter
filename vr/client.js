@@ -1,13 +1,20 @@
-// Auto-generated content.
-// This file contains the boilerplate to set up your React app.
-// If you want to modify your application, start in "index.vr.js"
-
-// Auto-generated content.
 import { VRInstance } from "react-vr-web";
 
+import * as THREE from "three";
+import * as OVRUI from "ovrui";
+
+import ControllerRayCaster from "react-vr-controller-raycaster";
+
 function init(bundle, parent, options) {
-  const vr = new VRInstance(bundle, "WelcomeToVR", parent, {
-    // Add custom options here
+  const scene = new THREE.Scene();
+
+  const vr = new VRInstance(bundle, "OutdoorMovieThearter", parent, {
+    raycasters: [
+      new OVRUI.MouseRayCaster(),
+      new ControllerRayCaster({ scene, color: "#ff0000" })
+    ],
+    scene,
+    cursorVisibility: "visible",
     ...options
   });
   vr.render = function() {

@@ -4720,6 +4720,10 @@ react-transform-hmr@^1.0.4:
     global "^4.3.0"
     react-proxy "^1.1.7"
 
+react-vr-controller-raycaster@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-vr-controller-raycaster/-/react-vr-controller-raycaster-1.0.0.tgz#247d6e73186d170728fd42d32e3bfac7b4716e6d"
+
 react-vr-web@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/react-vr-web/-/react-vr-web-2.0.0.tgz#cf8b4ef232a4bfd4c8ec7f87f6ae8d69547e0ab3"
